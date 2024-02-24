@@ -11,9 +11,9 @@ const SideBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-white border-r w-60 h-screen fixed px-6 py-3 flex flex-col items-start justify-between">
+    <aside className="bg-white border-r w-60 h-screen fixed p-6 flex flex-col items-start justify-between">
       {/* TAB LIST */}
-      <div className="w-full mt-12 flex flex-col gap-4 text-base font-medium leading-5 text-gray-700">
+      <div className="w-full flex flex-col gap-4 text-base font-medium leading-5 text-gray-700">
         <Logo />
         {Tabs.map((tab) => {
           const isActiveTab = tab.href === pathname;

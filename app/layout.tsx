@@ -4,7 +4,11 @@ import "./globals.css";
 import SideBar from "@/components/shared/Sidebar/SideBar";
 import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
+const inter = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   title: "Managify",
