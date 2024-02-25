@@ -5,13 +5,12 @@ import Link from "next/link";
 import { Tabs } from "@/constants/TabsList";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-import { UserButton } from "@clerk/nextjs";
 
 const SideBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-white border-r w-60 h-screen fixed p-6 flex flex-col items-start justify-between">
+    <aside className="bg-white border-r w-[var(--sidebar-width)] h-screen fixed p-6 flex flex-col items-start justify-between">
       {/* TAB LIST */}
       <div className="w-full flex flex-col gap-4 text-base font-medium leading-5 text-gray-700">
         <Logo />
@@ -33,7 +32,6 @@ const SideBar = () => {
           );
         })}
       </div>
-      <UserButton />
     </aside>
   );
 };

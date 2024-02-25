@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link
       href="/"
-      className="text-lg font-bold uppercase text-primary flex items-center justify-center gap-3 mb-8"
+      className="text-lg font-bold uppercase text-primary flex items-center justify-start gap-3 mb-8"
     >
       <Cable /> Managify
     </Link>

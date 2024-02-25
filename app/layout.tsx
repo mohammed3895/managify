@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/shared/Sidebar/SideBar";
 import { ClerkProvider } from "@clerk/nextjs";
+import Navbar from "@/components/shared/Navbar/Navbar";
 
 const inter = Manrope({
   subsets: ["latin"],
@@ -25,7 +26,8 @@ export default function RootLayout({
       <ClerkProvider>
         <body className={inter.className}>
           <SideBar />
-          <main className=" w-[calc(100% - 15rem)] h-screen p-6 ml-60">
+          <Navbar />
+          <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-60">
             {children}
           </main>
         </body>
