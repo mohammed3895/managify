@@ -13,7 +13,7 @@ const LeftNavItems = () => {
         <Input
           type="text"
           placeholder="Search..."
-          className="w-[190px] bg-transparent pl-10 text-sm font-medium text-gray-800"
+          className="w-[290px] bg-transparent pl-10 text-sm font-medium text-gray-800"
         />
       </div>
     </div>

@@ -27,7 +27,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <SideBar />
           <Navbar />
-          <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-60">
+          <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-60 relative">
             {children}
           </main>
         </body>
