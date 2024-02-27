@@ -1,0 +1,42 @@
+export const UserList = [
+  {
+    name: "John doe",
+    email: "john@doe.com",
+    photoUrl: "",
+    phoneNumber: "+11 234 567 898",
+    role: "Customer",
+    status: "active",
+  },
+  {
+    name: "Ahme Ali",
+    email: "ahmed@ali.com",
+    photoUrl: "",
+    phoneNumber: "+20 123 456 789",
+    role: "seller",
+    status: "active",
+  },
+  {
+    name: "sara adam",
+    email: "sara@adam.com",
+    photoUrl: "",
+    phoneNumber: "+20 132 958 765",
+    role: "customer service",
+    status: "banned",
+  },
+  {
+    name: "alison  jones",
+    email: "alison@jones.com",
+    photoUrl: "",
+    phoneNumber: "+91 557 881 295",
+    role: "content manager",
+    status: "active",
+  },
+  {
+    name: "shahd ahmed",
+    email: "shahd@ahmed.com",
+    photoUrl: "",
+    phoneNumber: "+12 232 456 789",
+    role: "admin",
+    status: "active",
+  },
+];

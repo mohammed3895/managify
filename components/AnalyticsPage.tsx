@@ -3,7 +3,7 @@ import React from "react";
 
 const AnalyticsPage = () => {
   return (
-    <div className="flex items-center justify-between gap-8 w-full">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
       {Analytics.map((item, i) => (
         <div
           key={i}
