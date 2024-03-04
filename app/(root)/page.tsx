@@ -1,13 +1,15 @@
 import AnalyticsPage from "@/components/AnalyticsPage";
+import ActiveUsers from "@/components/charts/ActiveUsers";
 import BarChart from "@/components/charts/BarChart";
-import { ChartOptions } from "@/data/charts";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-start justify-between gap-10 bg-accent p-4 rounded-xl">
+    <div className="flex flex-col items-start justify-between gap-10 p-4 rounded-xl w-full h-max">
       <AnalyticsPage />
-      <BarChart />
+      <div className="flex flex-col lg:flex-row items-start justify-start gap-8 w-full h-max">
+        <BarChart />
+        <ActiveUsers />
+      </div>
     </div>
   );
 }

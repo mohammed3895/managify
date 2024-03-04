@@ -10,7 +10,7 @@ const SideBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-white border-r w-[var(--sidebar-width)] h-screen fixed p-6 flex flex-col items-start justify-between z-50 overflow-hidden">
+    <aside className="bg-white border-r w-0 lg:w-[var(--sidebar-width)] h-screen fixed p-6 hidden lg:flex flex-col items-start justify-between z-50 overflow-hidden">
       {/* TAB LIST */}
       <div className="w-full flex flex-col gap-4 text-base font-medium leading-5 text-gray-700">
         <Logo />

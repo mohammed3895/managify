@@ -3,22 +3,24 @@ import React from "react";
 
 const AnalyticsPage = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
+    <div className="flex flex-col md:flex-row items-center flex-wrap justify-between gap-4 w-full">
       {Analytics.map((item, i) => (
         <div
           key={i}
-          className={`w-full p-6 rounded-lg  flex flex-col items-start gap-4`}
-          style={{ backgroundColor: item.background }}
+          className={`w-full lg:w-[300px] px-6 py-12 bg-white rounded-xl  flex items-center gap-8`}
         >
-          <h1 className="text-lg uppercase font-bold tracking-wide text-white">
-            {item.category}
-          </h1>
-          <span className="text-2xl font-normal text-gray-50">
-            {item.total}
-          </span>
-          <p className="text-sm font-normal tracking-wide text-gray-200">
-            {item.description}
-          </p>
+          <item.icon
+            className="text-5xl w-12 h-12 text-white"
+            style={{ color: item.background }}
+          />
+          <div className="flex flex-col items-start justify-start">
+            <h1 className="text-xs mb-2 uppercase font-bold tracking-wide text-muted-foreground">
+              {item.category}
+            </h1>
+            <span className="text-2xl font-bold text-zinc-900">
+              {item.total}
+            </span>
+          </div>
         </div>
       ))}
     </div>

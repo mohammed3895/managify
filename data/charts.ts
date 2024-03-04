@@ -1,25 +1,47 @@
-export const ChartOptions = {
-  options: {
-    chart: {
-      id: "chart",
+import { ApexOptions } from "apexcharts";
+
+export const ChartOptions: ApexOptions = {
+  chart: {
+    id: "chart",
+    toolbar: {
+      show: false,
     },
-    stacked: true,
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "24px",
-        endingShape: "rounded",
+    animations: {
+      enabled: true,
+      easing: "easeinout",
+      speed: 800,
+      animateGradually: {
+        enabled: true,
+        delay: 0,
       },
     },
-    stroke: {
-      show: true,
-      width: 6,
-      colors: ["transparent"],
+    zoom: {
+      enabled: true,
+      autoScaleYaxis: true,
     },
-    xaxis: {
-      categories: [1, 2, 3, 4, 5, 6, 7],
+    background: "#fff",
+    foreColor: "#37415a",
+    stackOnlyBar: true,
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "24px",
+      dataLabels: { orientation: "vertical", hideOverflowingLabels: true },
+      borderRadius: 5,
+      distributed: false,
     },
   },
+  stroke: {
+    // show: true,
+    width: 6,
+    colors: ["transparent"],
+    curve: "smooth",
+  },
+  xaxis: {
+    categories: [1, 2, 3, 4, 5, 6, 7],
+  },
+
   series: [
     {
       name: "Series 1",
@@ -29,9 +51,24 @@ export const ChartOptions = {
       name: "Series 2",
       data: [0.9, 1.9, 1.6, 1.5, 1.7, 1.2, 2.5],
     },
-    {
-      name: "Series 3",
-      data: [0.8, 0.9, 1.2, 1.1, 0.8, 1.9, 2.1],
-    },
   ],
+};
+
+export const LineChartOptions: ApexOptions = {
+  chart: {
+    type: "donut",
+
+    zoom: {
+      enabled: false,
+    },
+    toolbar: {
+      show: false,
+    },
+  },
+  legend: { show: false },
+  yaxis: {
+    show: false,
+  },
+
+  series: [1200, 11900, 32021],
 };
