@@ -143,8 +143,8 @@ export const Chats = [
   {
     id: 3,
     sender: {
-      name: "John doe",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      name: "Adam smith",
+      avatar: "https://randomuser.me/api/portraits/men/15.jpg",
     },
     messages: [
       {
@@ -176,8 +176,8 @@ export const Chats = [
   {
     id: 4,
     sender: {
-      name: "John doe",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      name: "suzan hady",
+      avatar: "https://randomuser.me/api/portraits/women/5.jpg",
     },
     messages: [
       {
@@ -209,8 +209,8 @@ export const Chats = [
   {
     id: 5,
     sender: {
-      name: "John doe",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      name: "hassan adam",
+      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
     },
     messages: [
       {
@@ -242,8 +242,8 @@ export const Chats = [
   {
     id: 6,
     sender: {
-      name: "John doe",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      name: "Layla osman",
+      avatar: "https://randomuser.me/api/portraits/women/25.jpg",
     },
     messages: [
       {
@@ -252,6 +252,30 @@ export const Chats = [
       },
       {
         text: `i need support with my product`,
+        isMe: false,
+      },
+      {
+        text: `sure, what is your problem ?`,
+        isMe: true,
+      },
+      {
+        text: `the price is too high for me`,
+        isMe: false,
+      },
+      {
+        text: `sure, what is your problem ?`,
+        isMe: true,
+      },
+      {
+        text: `the price is too high for me`,
+        isMe: false,
+      },
+      {
+        text: `sure, what is your problem ?`,
+        isMe: true,
+      },
+      {
+        text: `the price is too high for me`,
         isMe: false,
       },
       {

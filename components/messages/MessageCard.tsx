@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,6 +6,7 @@ import React from "react";
 interface MessageCardProps {
   username: string;
   userPhoto: string;
+  activeChat: string;
   id: number;
   messages?: { text: string; isMe: boolean }[];
   handleClick: () => void;
@@ -14,13 +16,17 @@ const MessageCard = ({
   username,
   userPhoto,
   messages,
+  activeChat,
   id,
   handleClick,
 }: MessageCardProps) => {
   return (
     <Link
       href={`/messages/${id}`}
-      className="w-full flex-col-start px-3 py-5 rounded-md cursor-pointer border-b last:border-none hover:bg-gray-50 transition-colors"
+      className={cn(
+        "w-full flex-col-start px-3 py-5 rounded-md cursor-pointer border-b last:border-none hover:bg-gray-50 transition-colors",
+        { "bg-accent": activeChat }
+      )}
       onClick={handleClick}
     >
       <div className="flex-row-start gap-4">
