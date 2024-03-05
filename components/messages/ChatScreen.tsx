@@ -2,6 +2,7 @@ import { Chats } from "@/constants/users";
 import { cn } from "@/lib/utils";
 import {
   ImagePlus,
+  Menu,
   MessageSquare,
   Mic,
   PhoneCall,
@@ -12,6 +13,7 @@ import Image from "next/image";
 import React from "react";
 import { Input } from "../ui/input";
 import { ScrollArea } from "../ui/scroll-area";
+import MobileChatScreen from "./MobileChatScreen";
 
 interface ParamsProps {
   messageId: number;
@@ -22,6 +24,7 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
 
   return (
     <div className="w-full h-full rounded-xl  min-h-[85vh] bg-white flex flex-col justify-between">
+      <MobileChatScreen />
       <div className="flex-row-between border-b sticky px-6 py-3">
         <div className="flex items-center justify-start gap-3 p-4">
           <Image
