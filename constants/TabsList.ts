@@ -13,7 +13,7 @@ export const Tabs = [
   },
   {
     title: "Messages",
-    href: "/messages",
+    href: "/messages/1",
     icon: MessageSquare,
   },
   {

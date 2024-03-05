@@ -5,9 +5,6 @@ import React from "react";
 const LeftNavItems = () => {
   return (
     <div className="flex-row-center gap-4">
-      <div className="rounded-full flex-row-center bg-primary p-2 cursor-pointer">
-        <Menu size={20} className=" text-white text-sm" />
-      </div>
       <div className=" rounded-full flex-row-center gap-3 relative">
         <Search size={18} className="text-gray-500 text-sm absolute left-2" />
         <Input

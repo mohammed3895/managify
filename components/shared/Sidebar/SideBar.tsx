@@ -6,11 +6,16 @@ import { Tabs } from "@/constants/TabsList";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
-const SideBar = () => {
+const SideBar = ({ isMobile }: { isMobile?: boolean }) => {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-white border-r w-0 lg:w-[var(--sidebar-width)] h-screen fixed p-6 hidden lg:flex flex-col items-start justify-between z-50 overflow-hidden">
+    <aside
+      className={cn(
+        "bg-white border-r w-0 lg:w-[var(--sidebar-width)] h-screen fixed p-6 mt-6 lg:mt-0 hidden lg:flex flex-col items-start justify-between z-50 overflow-hidden",
+        { "flex w-full": isMobile }
+      )}
+    >
       {/* TAB LIST */}
       <div className="w-full flex flex-col gap-4 text-base font-medium leading-5 text-gray-700">
         <Logo />
