@@ -30,8 +30,8 @@ const Notifications = () => {
   return (
     <Popover>
       <PopoverTrigger>
-        <div className="rounded-full flex-row-center bg-accent p-2 cursor-pointer">
-          <Bell size={18} className=" text-primary text-sm" />
+        <div className="rounded-full flex-row-center bg-white border dark:bg-zinc-700  p-2 cursor-pointer">
+          <Bell size={18} className=" text-black dark:text-white w-5 h-5" />
         </div>
       </PopoverTrigger>
       <PopoverContent className="flex-col-center gap-2 w-[300px]">

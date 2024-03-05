@@ -22,14 +22,14 @@ import Image from "next/image";
 
 const UsersPage = () => {
   return (
-    <div className="w-full p-8 bg-gray-50">
+    <div className="w-full p-8 bg-gray-50 dark:bg-zinc-900">
       <div className="flex-row-between py-6 my-6">
         <h1 className="text-3xl font-bold text-center md:text-left">Users</h1>
         <Button className="flex-center gap-2 text-base font-medium">
           <Plus /> Add User
         </Button>
       </div>
-      <Table className="w-full p-8 bg-white rounded-lg">
+      <Table className="w-full p-8 bg-white dark:bg-zinc-700 rounded-lg">
         <TableCaption>A list of Users.</TableCaption>
         <TableHeader>
           <TableRow>
@@ -52,15 +52,15 @@ const UsersPage = () => {
                   height={100}
                   className="w-8 h-8 rounded-full"
                 />
-                <h1 className="text-base font-semibold tracking-wide capitalize text-zinc-900">
+                <h1 className="text-base font-semibold tracking-wide capitalize text-zinc-900 dark:text-white">
                   {user.name}
                 </h1>
               </TableCell>
-              <TableCell className="text-sm font-medium capitalize text-zinc-800">
+              <TableCell className="text-sm font-medium capitalize text-zinc-800 dark:text-white">
                 {user.phoneNumber}
               </TableCell>
               <TableCell>
-                <h3 className="text-sm font-medium capitalize text-zinc-800">
+                <h3 className="text-sm font-medium capitalize text-zinc-800 dark:text-white">
                   {user.role}
                 </h3>
               </TableCell>
@@ -69,10 +69,10 @@ const UsersPage = () => {
                   className={cn(
                     "px-2 py-1 rounded-md text-xs w-fit font-semibold capitalize",
                     {
-                      "text-green-600 bg-green-400/25":
+                      "text-green-500 bg-green-400/25":
                         user.status === "active",
                     },
-                    { "text-red-600 bg-red-400/25": user.status === "banned" }
+                    { "text-red-500 bg-red-400/25": user.status === "banned" }
                   )}
                 >
                   {user.status}
@@ -81,7 +81,7 @@ const UsersPage = () => {
               <TableCell>
                 <Popover>
                   <PopoverTrigger>
-                    <MoreVertical className="text-zinc-700" />
+                    <MoreVertical className="text-zinc-700 dark:text-gray-400" />
                   </PopoverTrigger>
                   <PopoverContent className="flex flex-col items-center w-28 p-1">
                     <Button variant="ghost" className="w-full text-yellow-600">

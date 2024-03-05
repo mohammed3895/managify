@@ -23,8 +23,8 @@ const MessageCard = ({
     <Link
       href={`/messages/${id}`}
       className={cn(
-        "w-full flex-col-start px-3 py-5  cursor-pointer border-b last:border-none hover:bg-gray-50 transition-colors",
-        { "bg-gray-50": isOpen }
+        "w-full flex-col-start px-3 py-5 my-1 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors",
+        { "bg-gray-50 dark:bg-gray-600": isOpen }
       )}
     >
       <div className="flex-row-start gap-4">
@@ -36,7 +36,7 @@ const MessageCard = ({
           className="w-8 h-8 rounded-full"
         />
         <h1
-          className="text-base text-zinc-900 capitalize font-semibold tracking-tight"
+          className="text-base text-zinc-900 dark:text-white capitalize font-semibold tracking-tight"
           aria-label={username}
         >
           {username}
@@ -45,7 +45,7 @@ const MessageCard = ({
       {messages?.slice(-1).map((message, i) => (
         <p
           key={i}
-          className="mt-2 text-sm font-normal text-muted-foreground line-clamp-1"
+          className="mt-2 text-sm font-normal text-muted-foreground dark:text-gray-200 line-clamp-1"
         >
           {message.text}
         </p>

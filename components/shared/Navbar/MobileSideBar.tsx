@@ -9,7 +9,7 @@ const MobileSideBar = () => {
       <SheetTrigger>
         <Menu />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-white dark:bg-zinc-800">
         <SideBar isMobile={true} />
       </SheetContent>
     </Sheet>

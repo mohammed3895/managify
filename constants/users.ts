@@ -6,6 +6,12 @@ export const UserList = [
     phoneNumber: "+11 234 567 898",
     role: "Customer",
     status: "active",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "14" },
+      { label: "Tasks", value: "10" },
+      { label: "Connections", value: "1k" },
+    ],
   },
   {
     name: "Ahme Ali",
@@ -14,6 +20,12 @@ export const UserList = [
     phoneNumber: "+20 123 456 789",
     role: "seller",
     status: "active",
+    connected: false,
+    analytics: [
+      { label: "Projects", value: "17" },
+      { label: "Tasks", value: "22" },
+      { label: "Connections", value: "21k" },
+    ],
   },
   {
     name: "sara adam",
@@ -22,6 +34,12 @@ export const UserList = [
     phoneNumber: "+20 132 958 765",
     role: "customer service",
     status: "banned",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "27" },
+      { label: "Tasks", value: "11" },
+      { label: "Connections", value: "13k" },
+    ],
   },
   {
     name: "alison  jones",
@@ -30,6 +48,12 @@ export const UserList = [
     phoneNumber: "+91 557 881 295",
     role: "content manager",
     status: "active",
+    connected: false,
+    analytics: [
+      { label: "Projects", value: "35" },
+      { label: "Tasks", value: "21" },
+      { label: "Connections", value: "3.5k" },
+    ],
   },
   {
     name: "Ahme hassan",
@@ -38,6 +62,12 @@ export const UserList = [
     phoneNumber: "+20 113 456 578",
     role: "seller",
     status: "active",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "32" },
+      { label: "Tasks", value: "41" },
+      { label: "Connections", value: "30k" },
+    ],
   },
   {
     name: "shahd ahmed",
@@ -46,6 +76,12 @@ export const UserList = [
     phoneNumber: "+12 232 456 789",
     role: "admin",
     status: "active",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "19" },
+      { label: "Tasks", value: "26" },
+      { label: "Connections", value: "10.1k" },
+    ],
   },
   {
     name: "yasmeen ali",
@@ -54,6 +90,12 @@ export const UserList = [
     phoneNumber: "+12 111 456 789",
     role: "Product Manager",
     status: "banned",
+    connected: false,
+    analytics: [
+      { label: "Projects", value: "24" },
+      { label: "Tasks", value: "13" },
+      { label: "Connections", value: "5k" },
+    ],
   },
   {
     name: "hassan bakry",
@@ -62,6 +104,12 @@ export const UserList = [
     phoneNumber: "+12 111 456 789",
     role: "Front End Developer",
     status: "active",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "3" },
+      { label: "Tasks", value: "10" },
+      { label: "Connections", value: "805" },
+    ],
   },
   {
     name: "farah khaled",
@@ -70,6 +118,12 @@ export const UserList = [
     phoneNumber: "+12 111 456 789",
     role: "user",
     status: "active",
+    connected: false,
+    analytics: [
+      { label: "Projects", value: "8" },
+      { label: "Tasks", value: "10" },
+      { label: "Connections", value: "941" },
+    ],
   },
   {
     name: "layla haitham",
@@ -78,6 +132,12 @@ export const UserList = [
     phoneNumber: "+12 111 456 789",
     role: "Back End Developer",
     status: "active",
+    connected: true,
+    analytics: [
+      { label: "Projects", value: "13" },
+      { label: "Tasks", value: "32" },
+      { label: "Connections", value: "4.2k" },
+    ],
   },
 ];
 

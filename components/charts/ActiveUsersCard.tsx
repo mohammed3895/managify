@@ -13,7 +13,9 @@ const ActiveUsersCard = ({ time, total }: ActiveUsersCardProps) => {
       <h1 className="text-base font-bold capitalize text-muted-foreground">
         {time}
       </h1>
-      <p className="text-2xl font-bold capitalize text-zinc-800">{total}</p>
+      <p className="text-2xl font-bold capitalize text-zinc-800 dark:text-white">
+        {total}
+      </p>
     </div>
   );
 };

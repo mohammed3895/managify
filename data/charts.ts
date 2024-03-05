@@ -19,8 +19,8 @@ export const ChartOptions: ApexOptions = {
       enabled: true,
       autoScaleYaxis: true,
     },
-    background: "#fff",
-    foreColor: "#37415a",
+    background: "transparent",
+    foreColor: "#FEA12D",
     stackOnlyBar: true,
   },
   plotOptions: {

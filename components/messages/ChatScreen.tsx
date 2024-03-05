@@ -23,7 +23,7 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
   const chat = Chats[messageId - 1];
 
   return (
-    <div className="w-full h-full rounded-xl  min-h-[85vh] bg-white flex flex-col justify-between">
+    <div className="w-full h-full rounded-xl  min-h-[85vh] bg-white dark:bg-zinc-700 flex flex-col justify-between">
       <MobileChatScreen />
       <div className="flex-row-between border-b sticky px-6 py-3">
         <div className="flex items-center justify-start gap-3 p-4">
@@ -34,15 +34,15 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
             height={100}
             className="w-12 h-12 rounded-2xl"
           />
-          <h3 className="text-lg font-bold capitalize text-zinc-900">
+          <h3 className="text-lg font-bold capitalize text-zinc-900 dark:text-white">
             {chat.sender.name}
           </h3>
         </div>
         <div className="flex items-center gap-6">
-          <div className="w-12 h-12 rounded-2xl bg-white border flex items-center justify-center">
+          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-zinc-900 border flex items-center justify-center">
             <Video size={24} className="text-muted-foreground" />
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-white border flex items-center justify-center">
+          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-zinc-900 border flex items-center justify-center">
             <PhoneCall size={24} className="text-muted-foreground" />
           </div>
         </div>

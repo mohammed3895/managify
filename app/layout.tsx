@@ -4,6 +4,8 @@ import "./globals.css";
 import SideBar from "@/components/shared/Sidebar/SideBar";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/shared/Navbar/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
 const inter = Manrope({
   subsets: ["latin"],
@@ -24,13 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ClerkProvider>
-        <body className={inter.className}>
-          <SideBar />
-          <Navbar />
-          <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-0 lg:ml-60 relative bg-gray-50 dark:bg-zinc-500">
-            {children}
-          </main>
-        </body>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <body className={cn("transition-colors", inter.className)}>
+            <SideBar />
+            <Navbar />
+            <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-0 lg:ml-60 relative bg-gray-50 dark:bg-zinc-900 ">
+              {children}
+            </main>
+          </body>
+        </ThemeProvider>
       </ClerkProvider>
     </html>
   );

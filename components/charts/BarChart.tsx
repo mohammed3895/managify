@@ -5,12 +5,12 @@ import ReactApexChart from "react-apexcharts";
 
 const BarChart = () => {
   return (
-    <div className="w-full h-[75vh] lg:w-[70%] p-8 bg-white dark:bg-zinc-900 rounded-xl hover:shadow-lg transition-shadow flex-col-between gap-10">
+    <div className="w-full h-[75vh] lg:w-[70%] p-8 bg-white dark:bg-zinc-700 rounded-xl hover:shadow-lg transition-shadow flex-col-between gap-10">
       <div>
-        <h1 className="mt-2 text-base capitalize font-semibold text-zinc-900">
+        <h1 className="mt-2 text-base capitalize font-semibold text-zinc-900 dark:text-white">
           Audience Overview
         </h1>
-        <p className="mt-1 mb-4 text-sm font-normal text-zinc-800">
+        <p className="mt-1 mb-4 text-sm font-normal text-zinc-800 dark:text-gray-200">
           Follow ers and impressions by month.
         </p>
       </div>
