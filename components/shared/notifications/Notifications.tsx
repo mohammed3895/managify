@@ -30,11 +30,14 @@ const Notifications = () => {
   return (
     <Popover>
       <PopoverTrigger>
-        <div className="rounded-full flex-row-center bg-white border dark:bg-zinc-700  p-2 cursor-pointer">
+        <div className="rounded-full flex-row-center bg-white border dark:bg-zinc-800  p-2 cursor-pointer">
           <Bell size={18} className=" text-black dark:text-white w-5 h-5" />
         </div>
       </PopoverTrigger>
-      <PopoverContent className="flex-col-center gap-2 w-[300px]">
+      <PopoverContent className="flex-col-start gap-2 w-[300px] bg-white dark:bg-zinc-800 rounded-xl mt-6 mr-6">
+        <h1 className="text-lg capitalize font-medium text-zinc-900 dark:text-white mb-4">
+          Notifications
+        </h1>
         {IncomingNotifications.map((notification, i) => (
           <NotificationCard key={i} notification={notification} />
         ))}

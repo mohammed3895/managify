@@ -7,9 +7,12 @@ import ConnectionsPage from "./ConnectionsPage";
 
 const ProfileDetails = () => {
   return (
-    <div className="w-full h-max p-6 bg-white dark:bg-zinc-700 rounded-xl">
-      <Tabs>
-        <TabsList className="w-fit flex items-center justify-start bg-gray-50 dark:bg-zinc-800 gap-3">
+    <div className="w-full h-max min-h-svh p-6 bg-white dark:bg-zinc-800 rounded-xl">
+      <Tabs defaultValue="1">
+        <TabsList
+          className="w-fit flex items-center justify-start bg-gray-50 dark:bg-zinc-800 gap-3"
+          defaultValue="1"
+        >
           <TabsTrigger
             value="1"
             className="px-5 py-2 flex items-center gap-2 font-medium text-sm"

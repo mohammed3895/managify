@@ -9,7 +9,7 @@ interface MessageCardProps {
   userPhoto: string;
   isOpen: boolean;
   id: number;
-  messages?: { text: string; isMe: boolean }[];
+  messages?: { text: string; isMe: boolean; time: string }[];
 }
 
 const MessageCard = ({
@@ -23,7 +23,7 @@ const MessageCard = ({
     <Link
       href={`/messages/${id}`}
       className={cn(
-        "w-full flex-col-start px-3 py-5 my-1 rounded-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors",
+        "w-full flex-col-start px-3 py-5 my-1 rounded-md cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors",
         { "bg-gray-50 dark:bg-gray-600": isOpen }
       )}
     >
@@ -45,9 +45,9 @@ const MessageCard = ({
       {messages?.slice(-1).map((message, i) => (
         <p
           key={i}
-          className="mt-2 text-sm font-normal text-muted-foreground dark:text-gray-200 line-clamp-1"
+          className="mt-2 text-sm font-normal text-muted-foreground dark:text-gray-200 line-clamp-1 w-3/4"
         >
-          {message.text}
+          {message.text} <span className="">{message.time}</span>
         </p>
       ))}
     </Link>

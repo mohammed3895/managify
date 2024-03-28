@@ -5,7 +5,7 @@ import ReactApexChart from "react-apexcharts";
 
 const BarChart = () => {
   return (
-    <div className="w-full h-[75vh] lg:w-[70%] p-8 bg-white dark:bg-zinc-700 rounded-xl hover:shadow-lg transition-shadow flex-col-between gap-10">
+    <div className="w-full h-[75vh] lg:w-[70%] p-8 bg-white dark:bg-zinc-800 rounded-xl hover:shadow-lg transition-shadow ease-in-out duration-500 flex-col-between gap-10">
       <div>
         <h1 className="mt-2 text-base capitalize font-semibold text-zinc-900 dark:text-white">
           Audience Overview
@@ -14,14 +14,13 @@ const BarChart = () => {
           Follow ers and impressions by month.
         </p>
       </div>
-      <div className="pt-6 w-full h-full">
-        <ReactApexChart
-          options={ChartOptions}
-          series={ChartOptions.series}
-          type="bar"
-          height={350}
-        />
-      </div>
+      <ReactApexChart
+        options={ChartOptions}
+        series={ChartOptions.series}
+        height={350}
+        type="area"
+        className="pt-6 w-full h-full"
+      />
     </div>
   );
 };

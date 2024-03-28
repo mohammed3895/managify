@@ -151,26 +151,32 @@ export const Chats = [
     messages: [
       {
         text: `Hi there! How can I help you?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `i need support with my product`,
+        time: "12 : 40 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 58 pm",
         isMe: true,
       },
       {
-        text: `the price is too high for me`,
+        text: `the price is too high for me the price is too high for me the price is too high for me the price is too high for me`,
+        time: "01 : 01 pm",
         isMe: false,
       },
       {
         text: `can i found lower price product ?`,
+        time: "01 : 12 pm",
         isMe: false,
       },
       {
         text: `yes, i will send you  the link to a cheaper one`,
+        time: "01 : 13 pm",
         isMe: true,
       },
     ],
@@ -184,18 +190,22 @@ export const Chats = [
     messages: [
       {
         text: `Hey, did find  something good?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `yes , actually it's amazing !`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `ok, i'm waiting  for your message`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `sure, i will connect you  with him as soon as possible`,
+        time: "12 : 38 pm",
         isMe: false,
       },
     ],
@@ -209,26 +219,32 @@ export const Chats = [
     messages: [
       {
         text: `Hi there! How can I help you?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `i need support with my product`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `can i found lower price product ?`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `yes, i will send you  the link to a cheaper one`,
+        time: "12 : 38 pm",
         isMe: true,
       },
     ],
@@ -242,26 +258,32 @@ export const Chats = [
     messages: [
       {
         text: `Hi there! How can I help you?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `i need support with my product`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `can i found lower price product ?`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `yes, i will send you  the link to a cheaper one`,
+        time: "12 : 38 pm",
         isMe: true,
       },
     ],
@@ -275,26 +297,32 @@ export const Chats = [
     messages: [
       {
         text: `Hi there! How can I help you?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `i need support with my product`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `can i found lower price product ?`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `yes, i will send you  the link to a cheaper one`,
+        time: "12 : 38 pm",
         isMe: true,
       },
     ],
@@ -308,50 +336,62 @@ export const Chats = [
     messages: [
       {
         text: `Hi there! How can I help you?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `i need support with my product`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `sure, what is your problem ?`,
+        time: "12 : 38 pm",
         isMe: true,
       },
       {
         text: `the price is too high for me`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `can i found lower price product ?`,
+        time: "12 : 38 pm",
         isMe: false,
       },
       {
         text: `yes, i will send you  the link to a cheaper one`,
+        time: "12 : 38 pm",
         isMe: true,
       },
     ],

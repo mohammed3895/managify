@@ -14,6 +14,7 @@ import React from "react";
 import { Input } from "../ui/input";
 import { ScrollArea } from "../ui/scroll-area";
 import MobileChatScreen from "./MobileChatScreen";
+import { Button } from "../ui/button";
 
 interface ParamsProps {
   messageId: number;
@@ -23,10 +24,10 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
   const chat = Chats[messageId - 1];
 
   return (
-    <div className="w-full h-full rounded-xl  min-h-[85vh] bg-white dark:bg-zinc-700 flex flex-col justify-between">
+    <div className="w-full h-full rounded-xl  min-h-[60vh] bg-white dark:bg-zinc-800 flex flex-col justify-between">
       <MobileChatScreen />
-      <div className="flex-row-between border-b sticky px-6 py-3">
-        <div className="flex items-center justify-start gap-3 p-4">
+      <div className="flex-row-between border-b border-gray-50 dark:border-gray-500 sticky px-6 py-3">
+        <div className="flex items-center justify-start gap-2.5">
           <Image
             src={chat.sender.avatar}
             alt={chat.sender.name}
@@ -39,16 +40,22 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
           </h3>
         </div>
         <div className="flex items-center gap-6">
-          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-zinc-900 border flex items-center justify-center">
-            <Video size={24} className="text-muted-foreground" />
+          <div className="w-10 h-10 rounded-full bg-white dark:bg-zinc-800 border flex items-center justify-center">
+            <Video
+              size={20}
+              className="text-muted-foreground dark:text-white"
+            />
           </div>
-          <div className="w-12 h-12 rounded-2xl bg-white dark:bg-zinc-900 border flex items-center justify-center">
-            <PhoneCall size={24} className="text-muted-foreground" />
+          <div className="w-10 h-10 rounded-full bg-white dark:bg-zinc-800 border flex items-center justify-center">
+            <PhoneCall
+              size={20}
+              className="text-muted-foreground dark:text-white"
+            />
           </div>
         </div>
       </div>
 
-      <ScrollArea className="w-full h-[65vh] flex flex-col gap-6 p-6 overflow-hidden">
+      <ScrollArea className="w-full h-[60vh] flex flex-col gap-6 p-6 overflow-hidden">
         {chat.messages.map((message, i) => {
           return (
             <div
@@ -58,25 +65,56 @@ const ChatScreen = async ({ messageId }: ParamsProps) => {
               })}
             >
               <p
-                className={cn("px-6 py-4 rounded-full bg-accent my-4 w-3/4", {
-                  "bg-purple-300": message.isMe,
-                })}
+                className={cn(
+                  "px-6 py-3 rounded-xl bg-accent dark:bg-zinc-700 my-6 w-3/4",
+                  {
+                    "bg-primary text-white dark:bg-primary rounded-br-none":
+                      message.isMe,
+                  },
+                  {
+                    "rounded-bl-none": !message.isMe,
+                  }
+                )}
               >
-                {message.text}
+                {message.text}{" "}
+                <span className=" float-right text-xs pl-4 pt-5 text-muted-foreground">
+                  {message.time}
+                </span>
               </p>
             </div>
           );
         })}
       </ScrollArea>
 
-      <div className="w-full p-6 flex items-center justify-between gap-6">
-        <ImagePlus size={28} className="text-muted-foreground" />
+      <div className="w-full p-6 flex items-center justify-between gap-3.5">
+        <Button
+          variant="secondary"
+          className="rounded-2xl w-12 h-12 dark:bg-zinc-700"
+        >
+          <ImagePlus
+            size={32}
+            className="text-muted-foreground dark:text-white"
+          />
+        </Button>
         <Input
-          className="w-full rounded-full p-4"
+          className="w-full rounded-xl p-6 dark:bg-zinc-800 dark:border-zinc-700"
           placeholder="Type  a message..."
         />
-        <Mic size={28} className="text-muted-foreground" />
-        <SendHorizonal size={28} className="text-muted-foreground" />
+        <Button
+          variant="secondary"
+          className="rounded-2xl w-12 h-12 dark:bg-zinc-700"
+        >
+          <Mic size={28} className="text-muted-foreground dark:text-white" />
+        </Button>
+        <Button
+          variant="secondary"
+          className="rounded-2xl w-12 h-12 dark:bg-zinc-700"
+        >
+          <SendHorizonal
+            size={28}
+            className="text-muted-foreground dark:text-white"
+          />
+        </Button>
       </div>
     </div>
   );

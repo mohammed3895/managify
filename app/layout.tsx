@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import "./globals.css";
 import SideBar from "@/components/shared/Sidebar/SideBar";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import "./globals.css";
 
 const inter = Manrope({
   subsets: ["latin"],
@@ -24,17 +24,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ClerkProvider>
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <body className={cn("transition-colors", inter.className)}>
-            <SideBar />
-            <Navbar />
-            <main className=" w-[calc(100% - var(--sidebar-width))] h-screen p-6 ml-0 lg:ml-60 relative bg-gray-50 dark:bg-zinc-900 ">
-              {children}
+        <body className={cn("bg-gray-50 dark:bg-zinc-900", inter.className)}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <main className="">
+              <SideBar />
+              <Navbar />
+              <div className=" w-[calc(100% - var(--sidebar-width))] min-h-screen p-6 ml-0 lg:ml-60 relative">
+                {children}
+              </div>
             </main>
-          </body>
-        </ThemeProvider>
+          </ThemeProvider>
+        </body>
       </ClerkProvider>
     </html>
   );

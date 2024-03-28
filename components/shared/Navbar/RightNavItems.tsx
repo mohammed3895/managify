@@ -5,7 +5,7 @@ import { ToggleTheme } from "@/components/ToggleTheme";
 
 const RightNavItems = () => {
   return (
-    <div className="flex-row-center gap-6">
+    <div className="flex-row-center gap-2.5">
       <ToggleTheme />
       <Notifications />
       <UserButton />

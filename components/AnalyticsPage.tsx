@@ -3,11 +3,11 @@ import React from "react";
 
 const AnalyticsPage = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center flex-wrap justify-between gap-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-4 w-full">
       {Analytics.map((item, i) => (
         <div
           key={i}
-          className={`w-full lg:w-[300px] px-6 py-12 bg-white dark:bg-zinc-700 rounded-xl  flex items-center gap-8`}
+          className={`w-full px-6 py-12 bg-white dark:bg-zinc-800 transition-colors ease-in-out duration-300 rounded-xl  flex items-center gap-8 col-span-1`}
         >
           <item.icon
             className="text-5xl w-12 h-12 text-white"

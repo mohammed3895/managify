@@ -1,3 +1,4 @@
+"use client";
 import AnalyticsPage from "@/components/AnalyticsPage";
 import ActiveUsers from "@/components/charts/ActiveUsers";
 import BarChart from "@/components/charts/BarChart";
