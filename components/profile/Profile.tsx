@@ -49,7 +49,7 @@ const Profile = () => {
               <textarea
                 rows={6}
                 placeholder="What is in your mind ..."
-                className="w-full resize-none p-4 text-sm text-zinc-800 bg-gray-50 dark:bg-zinc-700 dark:border-gray-500 rounded-lg focus:border-primary focus:outline-none outline-none border border-gray-100"
+                className="w-full resize-none p-4 text-sm text-zinc-800 bg-gray-50 dark:bg-zinc-700 dark:border-gray-500 rounded-lg focus:border-primary dark:focus:border-primary focus:outline-none outline-none border border-gray-100"
               />
               <div className="mt-3">
                 <Button className="text-sm font-medium flex gap-3 text-white">

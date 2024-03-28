@@ -1,4 +1,10 @@
-import { MessageSquare, Trello, User, Users } from "lucide-react";
+import {
+  CircleUserRound,
+  MessagesSquare,
+  Trello,
+  User,
+  Users,
+} from "lucide-react";
 
 export const Tabs = [
   {
@@ -14,11 +20,11 @@ export const Tabs = [
   {
     title: "Messages",
     href: "/messages/1",
-    icon: MessageSquare,
+    icon: MessagesSquare,
   },
   {
     title: "Profile",
     href: "/profile",
-    icon: User,
+    icon: CircleUserRound,
   },
 ];

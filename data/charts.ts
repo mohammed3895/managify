@@ -2,7 +2,6 @@ import { ApexOptions } from "apexcharts";
 
 export const ChartOptions: ApexOptions = {
   chart: {
-    height: 280,
     type: "area",
     toolbar: { show: false },
     zoom: { enabled: false },
@@ -71,7 +70,6 @@ export const ChartOptions: ApexOptions = {
 export const LineChartOptions: ApexOptions = {
   chart: {
     type: "radialBar",
-    width: 460,
     selection: {
       type: "pie",
       stroke: {

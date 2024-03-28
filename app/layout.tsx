@@ -31,7 +31,7 @@ export default function RootLayout({
             <main className="">
               <SideBar />
               <Navbar />
-              <div className=" w-[calc(100% - var(--sidebar-width))] min-h-screen p-6 ml-0 lg:ml-60 relative">
+              <div className=" w-[calc(100% - var(--sidebar-width))] rounded-xl min-h-screen p-6 ml-0 lg:ml-60 relative">
                 {children}
               </div>
             </main>

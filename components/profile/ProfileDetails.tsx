@@ -10,7 +10,7 @@ const ProfileDetails = () => {
     <div className="w-full h-max min-h-svh p-6 bg-white dark:bg-zinc-800 rounded-xl">
       <Tabs defaultValue="1">
         <TabsList
-          className="w-fit flex items-center justify-start bg-gray-50 dark:bg-zinc-800 gap-3"
+          className="w-fit flex items-center justify-start  bg-gray-50 dark:bg-zinc-700 gap-3"
           defaultValue="1"
         >
           <TabsTrigger

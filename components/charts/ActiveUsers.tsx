@@ -1,6 +1,4 @@
 "use client";
-import { ActiveUsersData } from "@/constants/users";
-import ActiveUsersCard from "./ActiveUsersCard";
 import ReactApexChart from "react-apexcharts";
 import { LineChartOptions } from "@/data/charts";
 
