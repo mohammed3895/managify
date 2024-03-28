@@ -7,7 +7,7 @@ const AnalyticsPage = () => {
       {Analytics.map((item, i) => (
         <div
           key={i}
-          className={`w-full px-6 py-12 bg-white dark:bg-zinc-800 transition-colors ease-in-out duration-300 rounded-xl  flex items-center gap-8 col-span-1`}
+          className={`w-full px-6 py-12 bg-white dark:bg-zinc-800  rounded-xl  flex items-center gap-8 col-span-1`}
         >
           <item.icon
             className="text-5xl w-12 h-12 text-white"
