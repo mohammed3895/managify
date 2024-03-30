@@ -14,13 +14,15 @@ const BarChart = () => {
           Follow ers and impressions by month.
         </p>
       </div>
-      <ReactApexChart
-        options={ChartOptions}
-        series={ChartOptions.series}
-        height={350}
-        type="area"
-        className="pt-6 w-full h-full"
-      />
+      {typeof window !== "undefined" && (
+        <ReactApexChart
+          options={ChartOptions}
+          series={ChartOptions.series}
+          height={350}
+          type="area"
+          className="pt-6 w-full h-full"
+        />
+      )}
     </div>
   );
 };

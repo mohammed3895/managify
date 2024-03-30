@@ -13,12 +13,14 @@ const ActiveUsers = () => {
       </p>
 
       <div className="w-full mt-[5rem] flex-row-center">
-        <ReactApexChart
-          options={LineChartOptions}
-          series={LineChartOptions.series}
-          type="radialBar"
-          width={450}
-        />
+        {typeof window !== "undefined" && (
+          <ReactApexChart
+            options={LineChartOptions}
+            series={LineChartOptions.series}
+            type="radialBar"
+            width={450}
+          />
+        )}
       </div>
     </div>
   );
